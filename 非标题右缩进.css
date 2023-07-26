@@ -16,8 +16,8 @@ div.codeblock-customizer-header-container,
 /*
 1. 脚注
 2. blockquote 中不含有标题的时候的 p
-2. callout 中不含有标题的时候的 :is(p,ol,ul)
-3. 列表符号后的文本
+3. callout 中不含有标题的时候的 :is(p,ol,ul)
+4. 列表符号后的文本
 */
 section.footnotes ol,
 blockquote:not(:has(> :is(h1,h2,h3,h4,h5,h6))) p,
