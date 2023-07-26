@@ -1,0 +1,31 @@
+/* 标题居中 */
+
+/* 标题栏 */
+.inline-title{
+    --inline-title-size: 3em; /*default:2em*/
+    --inline-title-margin-bottom: 0.7em; /*default:0.5em*/
+    text-align: center;
+}
+
+/* 普通分割线 */
+.inline-title{
+    padding-bottom: 0.25em;
+    border-bottom: 3px solid #777777;
+}
+
+/* 渐变分割线 */
+/*
+.inline-title{
+    position: relative;
+    padding-bottom: 0.25em;
+}
+.inline-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #777 10%, #777 90%, transparent);
+}
+*/

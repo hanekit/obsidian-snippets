@@ -1,0 +1,31 @@
+/* 标题居中 */
+
+/* 标题栏 */
+.markdown-rendered h1{
+    --h1-size: 3em; /*default:2em*/
+    margin-bottom: 1em; /*default:0.5em*/
+    text-align: center;
+}
+
+/* 普通分割线 */
+h1{
+    padding-bottom: 0.25em;
+    border-bottom: 3px solid #777777;
+}
+
+/* 渐变分割线 */
+/*
+h1{
+    position: relative;
+    padding-bottom: 0.25em;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #777 10%, #777 90%, transparent);
+}
+*/

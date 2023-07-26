@@ -1,0 +1,35 @@
+.callout[data-callout^="caption"]{
+    /* 关闭背景 */
+    background-color: transparent;
+    /* 关闭边缘 */
+    padding: 0;
+    margin-block: 0;
+}
+
+/* 关闭图标 */
+.callout[data-callout^="caption"] .callout-icon{
+    display: none;
+}
+
+/* 文字样式 */
+.callout[data-callout^="caption"] .callout-title-inner{
+    color: #999999;
+    font-size: var(--font-text-size);
+    font-weight: 400;
+    /*text-align: center;*/
+}
+
+/* 加粗字重 */
+.callout[data-callout^="caption"] .callout-title-inner strong{
+    font-weight: var(--bold-weight);
+}
+
+/* 图片注释-文字块居中 */
+.callout[data-callout^="caption-figure"] .callout-title{
+    justify-content: center;
+}
+
+/* 图片注释-两边留空 */
+.callout[data-callout^="caption-figure"] .callout-title-inner{
+    margin-inline: 5em;
+    }

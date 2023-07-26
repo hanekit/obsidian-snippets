@@ -1,0 +1,55 @@
+/* callout 右缩进 */
+
+/*    border: 1px solid;*/
+
+/* 标题栏 */
+.callout-title:has(+ .callout-content) {
+    margin-block-start: 0.2em;
+    padding-bottom: 0.5em; /* 底部内间距 */
+    border-bottom: 1.5px solid rgba(var(--callout-color), 0.5); /* 底部边框 */
+    margin-block-end: 0.8em; /* 底部外间距 */
+}
+
+/* 标题字体 */
+.callout[data-callout="quote"] .callout-title:not(:has(+ .callout-content)) .callout-title-inner{
+    color: #555555;
+    font-weight: 500;
+}
+.callout-title-inner strong{
+    font-weight: 700;
+}
+
+/* 标题文字 */
+div.callout-title-inner {
+    margin-block-start: 0.1em;
+    margin-inline-start: 0.5em;
+}
+
+/* 标题图标 */
+.callout-icon{
+    margin-top: 0.2em; /*default:0.15em*/
+}
+.callout-icon svg{
+    height: 1em;
+    width: 1em;
+}
+
+
+/* callout 内容 */
+div.callout-content {
+    padding-left: 0px;
+    margin-inline-start: 1em;
+}
+
+div.callout-content p:first-of-type{
+    margin-block-start: 0em;
+}
+div.callout-content p:last-of-type{
+    margin-block-end: 0.3em;
+}
+
+/* callout 内容 > 标题 */
+div.callout-content :is(h1,h2,h3,h4,h5,h6){
+    margin-top: 0em; /*default:15px*/
+    margin-bottom: 0.15em; /*default:15px*/
+}

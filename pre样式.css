@@ -1,0 +1,34 @@
+
+/* 使行号底色纵向填充满 */
+.codeblock-customizer-pre code {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+div.codeblock-customizer-RVline:first-of-type div{
+    padding-top: 8px;
+}
+
+div.codeblock-customizer-RVline:last-of-type div{
+    padding-bottom: 8px;
+}
+
+.markdown-rendered pre{
+    min-height: 10px;
+}
+
+/* 标题栏下边框样式 */
+.codeblock-customizer-header-container {
+    border-bottom: 3px solid var(--header-line-color);
+}
+
+/* 代码字体大小 */
+body{
+    --code-normal: #222222;
+    --code-background: #F4F4F4;
+    --code-size: 1em;
+}
+
+

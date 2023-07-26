@@ -1,0 +1,28 @@
+/* 非标题右缩进 */
+
+/* 需要右缩进的部件 */
+p,
+pre,
+table,
+ol,
+ul,
+div.callout,
+div.codeblock-customizer-header-container,
+.markdown-rendered blockquote {
+    margin-inline-start: calc(1.5 *var(--font-text-size));
+}
+
+/* 排除不需要右缩进的部件 */
+/*
+1. 脚注
+2. blockquote 中不含有标题的时候的 p
+2. callout 中不含有标题的时候的 :is(p,ol,ul)
+3. 列表符号后的文本
+*/
+section.footnotes ol,
+blockquote:not(:has(> :is(h1,h2,h3,h4,h5,h6))) p,
+.callout-content:not(:has(> :is(h1,h2,h3,h4,h5,h6))) :is(p,ol,ul),
+li p {
+    margin-inline-start: 0em;
+}
+

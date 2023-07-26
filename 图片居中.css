@@ -1,0 +1,8 @@
+p:has(img){
+     text-align: center;
+}
+
+p:has(img){
+     color: #999999;
+     font-size: 16px;
+}
